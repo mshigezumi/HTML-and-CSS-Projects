@@ -16,7 +16,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #FFF;
+    background-color: rgb(175,150,110);
 }
 
 footer, nav {
@@ -194,6 +194,10 @@ HOME SECTION STYLES
 CONTACT STYLES
 */
 
+#gallery {
+    background-color: rgb(175,150,110);
+}
+
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -203,12 +207,12 @@ CONTACT STYLES
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
-    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
 
 #contact {
-    background-color: #F5F3F3;
+    background-color: lightgray;
 }
 
 .contact {
@@ -216,7 +220,7 @@ CONTACT STYLES
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100,65,0,.3);
+    background-color: rgba(100,65,10,.3);
     box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px rgba(0,0,0,0.5);
 }
 
@@ -328,7 +332,7 @@ FOOTER STYLES
 */
 
 #footer {
-    background-color: rgba(100,65,0,.3);
+    /* background-color: rgba(0,0,0,0.3); */
     color: #000;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
     padding: 20px 50px 20px 50px;
