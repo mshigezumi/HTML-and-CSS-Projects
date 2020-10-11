@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang=“en”>
+	<head>
+		<title>[TITLE GOES HERE]</title>
+        <meta charset=“utf-8”>
+        <style>
+            .navbar {
+                font: bold 20px sans-serif;
+                overflow: hidden;
+                margin: 0 auto;
+                width: 100%;
+                position: fixed;
+                z-index: 100;
+                top: 0;
+                background-color: grey;
+                text-align: center;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .menu li {
+                display: inline-block;
+                color: peachpuff;
+                padding: 0 15px;
+                /*position: relative;*/
+                cursor: pointer;
+            }
+
+            .menu li:hover {
+                color: darkorange;
+            }
+
+            .spacer {
+                margin-top: 70px;
+            }
+
+            .container {
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+                position: relative;
+            }
+
+            .floating-text {
+                position: absolute;
+                top: 5%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+            }
+
+            .photo-container img {
+                display: block;
+                margin: 0px auto;
+                width: 50%;
+                height: auto;
+                filter: saturate(200%) sepia(25%);
+                border-radius: 350px;
+                margin-bottom: 15px;
+            }
+
+            .overlay {
+                position: absolute;
+                margin: 0px auto;
+                width: 50%;
+                height: auto;
+                border-radius: 350px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0,0,0,0.5);
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            .overlay:hover {
+                opacity: 1;
+            }
+
+            .text{
+                color: purple;
+                margin: 15px;
+            }
+
+            .text:hover {
+                color: orange;
+            }
+            
+            .table {
+                border-collapse: collapse;
+            }
+
+            .table, th, td{
+                border: 2px solid black;
+                margin: 0px auto;
+                padding: 10px;
+            }
+
+            .table th {
+                background-color: grey;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+                margin-top: 15px;
+            }
+
+            .column1 {
+                background-color: lightgrey;
+                color: darkviolet;
+                min-height: 3em;
+                max-height: 100px;
+            }
+
+            .column2 {
+                background-color: darkgrey;
+                color: indigo;
+                min-height: 3em;
+                max-height: 100px;
+            }
+
+            .footer {
+                margin-top: 15px;
+                background-color: grey;
+                font-weight: bold;
+            }
+        </style>
+	</head>
+
+	<body>
+        <div class="navbar">
+            <ul class="menu"> <!-- menu is still not completely centered, don't know why, offset to the right a bit -->
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="container">
+            <div class="photo-container">
+                <img src="./Dog.jpg" alt="Dog">
+                <div class="overlay"></div>
+                <div class="floating-text">Doge</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <video autoplay muted loop width="180" height="320"><source src="./Dog.mp4" type="video/mp4"></video>
+            <div class="floating-text">Doge with a party hat</div>
+        </div>
+
+        <div class="container">
+            <p class="text">TEST</p>
+        </div>
+
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>Lucina</td>
+                    <td>Lord</td>
+                </tr>
+                <tr>
+                    <td>Nino</td>
+                    <td>Mage</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row container">
+            <div class="column">
+                <div class="column1"><br>TEST</div>
+            </div>
+            <div class="column">
+                <div class="column2"><br>TEST</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                Doge.com
+            </div>
+        </footer>
+	</body>
+</html>
